@@ -87,33 +87,63 @@ if prompt := st.chat_input("What would you like to book?"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # Run agent directly
+    # Run agent with streaming
     with st.chat_message("assistant"):
-        with st.spinner("Agent is thinking..."):
-            try:
-                st.session_state.agent_messages.append(HumanMessage(content=prompt))
+        try:
+            st.session_state.agent_messages.append(HumanMessage(content=prompt))
 
-                result = agent.invoke({
-                    "messages": st.session_state.agent_messages,
-                    "steps": [],
-                })
+            response_placeholder = st.empty()
+            steps_container = st.container()
+            all_steps = []
+            final_text = ""
+            streamed_tokens = ""
 
-                st.session_state.agent_messages = result["messages"]
-                response_text = result["messages"][-1].content or "Done."
-                steps = result.get("steps", [])
+            for event in agent.stream(
+                {"messages": st.session_state.agent_messages, "steps": []},
+                stream_mode="updates",
+            ):
+                # Handle agent node events
+                if "agent" in event:
+                    agent_data = event["agent"]
+                    msgs = agent_data.get("messages", [])
+                    new_steps = agent_data.get("steps", [])
+                    all_steps.extend(new_steps)
 
-                st.markdown(response_text)
+                    for m in msgs:
+                        if hasattr(m, "content") and m.content:
+                            streamed_tokens += m.content
+                            response_placeholder.markdown(streamed_tokens + "▌")
 
-                if steps:
-                    with st.expander("Reasoning Steps", expanded=True):
-                        for step in steps:
-                            st.text(step)
+                # Handle tool node events
+                if "tools" in event:
+                    tool_data = event["tools"]
+                    new_steps = tool_data.get("steps", [])
+                    all_steps.extend(new_steps)
+                    with steps_container:
+                        for s in new_steps:
+                            st.caption(f"⚙️ {s[:120]}")
 
-                st.session_state.messages.append({
-                    "role": "assistant",
-                    "content": response_text,
-                    "steps": steps,
-                })
+            # Final render (remove cursor)
+            final_text = streamed_tokens or "Done."
+            response_placeholder.markdown(final_text)
 
-            except Exception as e:
-                st.error(f"Error: {str(e)}")
+            # Get final messages from a full invoke to keep state consistent
+            result = agent.invoke({
+                "messages": st.session_state.agent_messages,
+                "steps": [],
+            })
+            st.session_state.agent_messages = result["messages"]
+
+            if all_steps:
+                with st.expander("Reasoning Steps", expanded=False):
+                    for step in all_steps:
+                        st.text(step)
+
+            st.session_state.messages.append({
+                "role": "assistant",
+                "content": final_text,
+                "steps": all_steps,
+            })
+
+        except Exception as e:
+            st.error(f"Error: {str(e)}")
