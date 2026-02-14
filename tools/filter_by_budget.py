@@ -7,7 +7,7 @@ from config import TICKETS_PATH
 def filter_by_budget(ticket_type: str, max_budget: float, origin: str = "", destination: str = "", date: str = "") -> str:
     """Filter available tickets by maximum budget.
     Returns only tickets with price <= max_budget.
-    ticket_type: flight, train, or movie. max_budget: maximum price in dollars."""
+    ticket_type: flight, train, or movie. max_budget: maximum price in INR (Indian Rupees)."""
 
     with open(TICKETS_PATH, "r") as f:
         data = json.load(f)
@@ -28,6 +28,6 @@ def filter_by_budget(ticket_type: str, max_budget: float, origin: str = "", dest
     results = [t for t in results if t.get("price", 0) <= max_budget]
 
     if not results:
-        return f"No tickets found within budget of ${max_budget:.2f}. Try increasing your budget."
+        return f"No tickets found within budget of \u20b9{max_budget:.2f}. Try increasing your budget."
 
     return json.dumps(results, indent=2)

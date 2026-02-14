@@ -34,7 +34,7 @@ TICKET DETAILS
   Date        : {data['date']}
 ----------------------------------------
 PAYMENT DETAILS
-  Amount      : ${data['price']:.2f}
+  Amount      : \u20b9{data['price']:.2f}
   Transaction : {data['transaction_id']}
   Pay Status  : {data['payment_status'].upper()}
 ========================================

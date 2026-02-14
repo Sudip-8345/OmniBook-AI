@@ -118,7 +118,7 @@ def _build_html_email(booking_id, passenger_name):
                     </tr>
                     <tr>
                       <td style="color: #777; font-size: 14px; padding: 10px 20px; width: 40%;">Amount</td>
-                      <td style="color: #333; font-size: 20px; font-weight: 700; padding: 10px 20px;">${data['price']:.2f}</td>
+                      <td style="color: #333; font-size: 20px; font-weight: 700; padding: 10px 20px;">\u20b9{data['price']:.2f}</td>
                     </tr>
                     <tr style="background: #ffffff;">
                       <td style="color: #777; font-size: 14px; padding: 10px 20px;">Transaction ID</td>

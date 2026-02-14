@@ -18,5 +18,5 @@ def process_payment_mock(amount: float, passenger_name: str, passenger_email: st
         "transaction_id": transaction_id,
         "amount_charged": amount,
         "passenger_name": passenger_name,
-        "message": f"Payment of ${amount:.2f} processed successfully for {passenger_name}",
+        "message": f"Payment of \u20b9{amount:.2f} processed successfully for {passenger_name}",
     })
