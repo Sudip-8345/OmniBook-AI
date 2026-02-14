@@ -1,6 +1,6 @@
 {
     "flights": [
-            {
+        {
             "id": "FL001",
             "airline": "IndiGo",
             "origin": "Kolkata",
@@ -11,8 +11,8 @@
             "price": 4800,
             "class": "Economy",
             "seats_available": 45
-            },
-            {
+        },
+        {
             "id": "FL002",
             "airline": "Air India",
             "origin": "Kolkata",
@@ -23,8 +23,8 @@
             "price": 8200,
             "class": "Business",
             "seats_available": 12
-            },
-            {
+        },
+        {
             "id": "FL003",
             "airline": "SpiceJet",
             "origin": "Mumbai",
@@ -35,8 +35,8 @@
             "price": 3500,
             "class": "Economy",
             "seats_available": 60
-            },
-            {
+        },
+        {
             "id": "FL004",
             "airline": "Vistara",
             "origin": "Mumbai",
@@ -47,8 +47,8 @@
             "price": 6900,
             "class": "Business",
             "seats_available": 10
-            },
-            {
+        },
+        {
             "id": "FL005",
             "airline": "IndiGo",
             "origin": "Delhi",
@@ -59,8 +59,8 @@
             "price": 4200,
             "class": "Economy",
             "seats_available": 50
-            },
-            {
+        },
+        {
             "id": "FL006",
             "airline": "Air India",
             "origin": "Delhi",
@@ -71,8 +71,8 @@
             "price": 7600,
             "class": "Business",
             "seats_available": 8
-            },
-            {
+        },
+        {
             "id": "FL007",
             "airline": "SpiceJet",
             "origin": "Chennai",
@@ -83,8 +83,8 @@
             "price": 3900,
             "class": "Economy",
             "seats_available": 38
-            },
-            {
+        },
+        {
             "id": "FL008",
             "airline": "Vistara",
             "origin": "Chennai",
@@ -95,8 +95,8 @@
             "price": 7100,
             "class": "Business",
             "seats_available": 15
-            },
-            {
+        },
+        {
             "id": "FL009",
             "airline": "IndiGo",
             "origin": "Pune",
@@ -107,8 +107,8 @@
             "price": 4600,
             "class": "Economy",
             "seats_available": 42
-            },
-            {
+        },
+        {
             "id": "FL010",
             "airline": "Air India",
             "origin": "Pune",
@@ -119,8 +119,8 @@
             "price": 8200,
             "class": "Business",
             "seats_available": 9
-            },
-            {
+        },
+        {
             "id": "FL011",
             "airline": "SpiceJet",
             "origin": "Ahmedabad",
@@ -131,8 +131,8 @@
             "price": 3700,
             "class": "Economy",
             "seats_available": 55
-            },
-            {
+        },
+        {
             "id": "FL012",
             "airline": "Vistara",
             "origin": "Ahmedabad",
@@ -143,8 +143,8 @@
             "price": 6500,
             "class": "Business",
             "seats_available": 7
-            },
-            {
+        },
+        {
             "id": "FL013",
             "airline": "IndiGo",
             "origin": "Lucknow",
@@ -155,8 +155,8 @@
             "price": 4400,
             "class": "Economy",
             "seats_available": 33
-            },
-            {
+        },
+        {
             "id": "FL014",
             "airline": "Air India",
             "origin": "Lucknow",
@@ -167,8 +167,8 @@
             "price": 7800,
             "class": "Business",
             "seats_available": 10
-            },
-            {
+        },
+        {
             "id": "FL015",
             "airline": "SpiceJet",
             "origin": "Bengaluru",
@@ -179,8 +179,8 @@
             "price": 5200,
             "class": "Economy",
             "seats_available": 47
-            },
-            {
+        },
+        {
             "id": "FL016",
             "airline": "Vistara",
             "origin": "Bengaluru",
@@ -191,8 +191,8 @@
             "price": 9100,
             "class": "Business",
             "seats_available": 6
-            },
-            {
+        },
+        {
             "id": "FL017",
             "airline": "IndiGo",
             "origin": "Delhi",
@@ -203,8 +203,8 @@
             "price": 5400,
             "class": "Economy",
             "seats_available": 40
-            },
-            {
+        },
+        {
             "id": "FL018",
             "airline": "Air India",
             "origin": "Delhi",
@@ -215,8 +215,8 @@
             "price": 8800,
             "class": "Business",
             "seats_available": 8
-            },
-            {
+        },
+        {
             "id": "FL019",
             "airline": "SpiceJet",
             "origin": "Kolkata",
@@ -227,8 +227,8 @@
             "price": 5100,
             "class": "Economy",
             "seats_available": 29
-            },
-            {
+        },
+        {
             "id": "FL020",
             "airline": "Vistara",
             "origin": "Kolkata",
@@ -239,7 +239,7 @@
             "price": 9200,
             "class": "Business",
             "seats_available": 5
-            }
+        }
     ],
     "trains": [
         {
@@ -481,9 +481,92 @@
             "price": 1500,
             "class": "AC 3 Tier",
             "seats_available": 50
+        },
+        {
+            "id": "TR021",
+            "operator": "Indian Railways",
+            "origin": "Mumbai",
+            "destination": "Delhi",
+            "date": "2026-03-02",
+            "departure": "16:30",
+            "arrival": "08:30",
+            "price": 850,
+            "class": "Sleeper",
+            "seats_available": 150
+        },
+        {
+            "id": "TR022",
+            "operator": "Indian Railways",
+            "origin": "Mumbai",
+            "destination": "Delhi",
+            "date": "2026-03-02",
+            "departure": "17:00",
+            "arrival": "09:00",
+            "price": 1450,
+            "class": "AC 3 Tier",
+            "seats_available": 70
+        },
+        {
+            "id": "TR023",
+            "operator": "Indian Railways",
+            "origin": "Mumbai",
+            "destination": "Delhi",
+            "date": "2026-03-05",
+            "departure": "22:00",
+            "arrival": "14:00",
+            "price": 2400,
+            "class": "AC 2 Tier",
+            "seats_available": 35
+        },
+        {
+            "id": "TR024",
+            "operator": "Indian Railways",
+            "origin": "Mumbai",
+            "destination": "Delhi",
+            "date": "2026-03-05",
+            "departure": "11:00",
+            "arrival": "03:00",
+            "price": 750,
+            "class": "Sleeper",
+            "seats_available": 180
+        },
+        {
+            "id": "TR025",
+            "operator": "Indian Railways",
+            "origin": "Mumbai",
+            "destination": "Delhi",
+            "date": "2026-03-08",
+            "departure": "06:00",
+            "arrival": "22:00",
+            "price": 1800,
+            "class": "AC 3 Tier",
+            "seats_available": 55
+        },
+        {
+            "id": "TR026",
+            "operator": "Indian Railways",
+            "origin": "Delhi",
+            "destination": "Mumbai",
+            "date": "2026-03-03",
+            "departure": "15:00",
+            "arrival": "07:00",
+            "price": 900,
+            "class": "Sleeper",
+            "seats_available": 140
+        },
+        {
+            "id": "TR027",
+            "operator": "Indian Railways",
+            "origin": "Delhi",
+            "destination": "Mumbai",
+            "date": "2026-03-03",
+            "departure": "16:30",
+            "arrival": "08:30",
+            "price": 2200,
+            "class": "AC 2 Tier",
+            "seats_available": 40
         }
-    ]
-        ,
+    ],
     "movies": [
         {
             "id": "MV001",

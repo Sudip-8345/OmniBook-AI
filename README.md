@@ -3,7 +3,7 @@
 Autonomous ticket booking agent for flights, trains, and movie tickets. Uses a LangGraph tool-calling agent with Groq LLM, Streamlit chat UI, FastAPI backend, and SQLite storage. Sends styled HTML confirmation emails via Gmail SMTP.
 
 ## Wanna try it ?
-Click here - [Streamlit](https://omnibook-ai-234.streamlit.app/)
+Click here : [Streamlit](https://omnibook-ai-234.streamlit.app/)
 
 ## Tech Stack
 
