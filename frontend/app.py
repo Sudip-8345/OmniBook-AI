@@ -43,10 +43,10 @@ with st.sidebar:
     st.markdown(
         """
     **Try asking:**
-    - *Book a flight from New York to Los Angeles*
-    - *Find trains from Chicago to Detroit under $70*
-    - *Book a movie ticket in Mumbai*
-    - *Show me flights from Boston to Washington DC*
+    - *Book a flight from Ahmedabad to Goa*
+    - *Find trains from Mumbai to Delhi at 1500*
+    - *Book a movie ticket in Kolkata*
+    - *Show me flights from Kolkata to Delhi*
     """
     )
 
