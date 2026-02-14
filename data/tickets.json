@@ -1,0 +1,265 @@
+{
+    "flights": [
+        {
+            "id": "FL001",
+            "airline": "SkyHigh Airways",
+            "origin": "New York",
+            "destination": "Los Angeles",
+            "date": "2026-03-01",
+            "departure": "08:00",
+            "arrival": "11:30",
+            "price": 250,
+            "class": "Economy",
+            "seats_available": 45
+        },
+        {
+            "id": "FL002",
+            "airline": "SkyHigh Airways",
+            "origin": "New York",
+            "destination": "Los Angeles",
+            "date": "2026-03-01",
+            "departure": "14:00",
+            "arrival": "17:30",
+            "price": 420,
+            "class": "Business",
+            "seats_available": 12
+        },
+        {
+            "id": "FL003",
+            "airline": "Eagle Flights",
+            "origin": "Chicago",
+            "destination": "Miami",
+            "date": "2026-03-05",
+            "departure": "09:30",
+            "arrival": "13:45",
+            "price": 180,
+            "class": "Economy",
+            "seats_available": 60
+        },
+        {
+            "id": "FL004",
+            "airline": "Eagle Flights",
+            "origin": "Chicago",
+            "destination": "Miami",
+            "date": "2026-03-05",
+            "departure": "18:00",
+            "arrival": "22:15",
+            "price": 350,
+            "class": "Business",
+            "seats_available": 8
+        },
+        {
+            "id": "FL005",
+            "airline": "Pacific Wings",
+            "origin": "San Francisco",
+            "destination": "Seattle",
+            "date": "2026-03-10",
+            "departure": "07:00",
+            "arrival": "09:15",
+            "price": 150,
+            "class": "Economy",
+            "seats_available": 30
+        },
+        {
+            "id": "FL006",
+            "airline": "Atlantic Air",
+            "origin": "Boston",
+            "destination": "Washington DC",
+            "date": "2026-03-12",
+            "departure": "10:00",
+            "arrival": "11:30",
+            "price": 130,
+            "class": "Economy",
+            "seats_available": 55
+        },
+        {
+            "id": "FL007",
+            "airline": "SkyHigh Airways",
+            "origin": "New York",
+            "destination": "Chicago",
+            "date": "2026-03-15",
+            "departure": "06:30",
+            "arrival": "08:45",
+            "price": 200,
+            "class": "Economy",
+            "seats_available": 38
+        },
+        {
+            "id": "FL008",
+            "airline": "Pacific Wings",
+            "origin": "Los Angeles",
+            "destination": "New York",
+            "date": "2026-03-20",
+            "departure": "11:00",
+            "arrival": "19:30",
+            "price": 280,
+            "class": "Economy",
+            "seats_available": 22
+        }
+    ],
+    "trains": [
+        {
+            "id": "TR001",
+            "operator": "Amtrak",
+            "origin": "New York",
+            "destination": "Washington DC",
+            "date": "2026-03-02",
+            "departure": "07:00",
+            "arrival": "10:30",
+            "price": 85,
+            "class": "Coach",
+            "seats_available": 120
+        },
+        {
+            "id": "TR002",
+            "operator": "Amtrak",
+            "origin": "New York",
+            "destination": "Washington DC",
+            "date": "2026-03-02",
+            "departure": "12:00",
+            "arrival": "15:30",
+            "price": 150,
+            "class": "Business",
+            "seats_available": 40
+        },
+        {
+            "id": "TR003",
+            "operator": "Amtrak",
+            "origin": "New York",
+            "destination": "Boston",
+            "date": "2026-03-03",
+            "departure": "08:00",
+            "arrival": "12:15",
+            "price": 70,
+            "class": "Coach",
+            "seats_available": 95
+        },
+        {
+            "id": "TR004",
+            "operator": "CalTrain",
+            "origin": "San Francisco",
+            "destination": "San Jose",
+            "date": "2026-03-04",
+            "departure": "09:00",
+            "arrival": "10:15",
+            "price": 25,
+            "class": "Standard",
+            "seats_available": 200
+        },
+        {
+            "id": "TR005",
+            "operator": "Metra",
+            "origin": "Chicago",
+            "destination": "Milwaukee",
+            "date": "2026-03-06",
+            "departure": "06:30",
+            "arrival": "08:00",
+            "price": 45,
+            "class": "Standard",
+            "seats_available": 150
+        },
+        {
+            "id": "TR006",
+            "operator": "Amtrak",
+            "origin": "Chicago",
+            "destination": "Detroit",
+            "date": "2026-03-08",
+            "departure": "10:00",
+            "arrival": "15:30",
+            "price": 65,
+            "class": "Coach",
+            "seats_available": 80
+        },
+        {
+            "id": "TR007",
+            "operator": "Amtrak",
+            "origin": "Boston",
+            "destination": "New York",
+            "date": "2026-03-10",
+            "departure": "14:00",
+            "arrival": "18:30",
+            "price": 95,
+            "class": "Business",
+            "seats_available": 35
+        }
+    ],
+    "movies": [
+        {
+            "id": "MV001",
+            "title": "The Last Frontier",
+            "genre": "Action",
+            "origin": "New York",
+            "theater": "AMC Empire 25",
+            "date": "2026-03-01",
+            "showtime": "19:00",
+            "price": 18,
+            "seats_available": 80
+        },
+        {
+            "id": "MV002",
+            "title": "The Last Frontier",
+            "genre": "Action",
+            "origin": "New York",
+            "theater": "AMC Empire 25",
+            "date": "2026-03-01",
+            "showtime": "21:30",
+            "price": 18,
+            "seats_available": 65
+        },
+        {
+            "id": "MV003",
+            "title": "Echoes of Tomorrow",
+            "genre": "Sci-Fi",
+            "origin": "Los Angeles",
+            "theater": "TCL Chinese Theatre",
+            "date": "2026-03-02",
+            "showtime": "18:00",
+            "price": 22,
+            "seats_available": 50
+        },
+        {
+            "id": "MV004",
+            "title": "Midnight in Paris 2",
+            "genre": "Romance",
+            "origin": "Chicago",
+            "theater": "Chicago Theatre",
+            "date": "2026-03-03",
+            "showtime": "20:00",
+            "price": 15,
+            "seats_available": 100
+        },
+        {
+            "id": "MV005",
+            "title": "Code Red",
+            "genre": "Thriller",
+            "origin": "Mumbai",
+            "theater": "PVR Phoenix",
+            "date": "2026-03-05",
+            "showtime": "17:30",
+            "price": 12,
+            "seats_available": 120
+        },
+        {
+            "id": "MV006",
+            "title": "Galactic Wars",
+            "genre": "Sci-Fi",
+            "origin": "Mumbai",
+            "theater": "INOX Megaplex",
+            "date": "2026-03-05",
+            "showtime": "20:00",
+            "price": 14,
+            "seats_available": 90
+        },
+        {
+            "id": "MV007",
+            "title": "The Comedy Club",
+            "genre": "Comedy",
+            "origin": "San Francisco",
+            "theater": "Metreon AMC",
+            "date": "2026-03-07",
+            "showtime": "19:30",
+            "price": 16,
+            "seats_available": 70
+        }
+    ]
+}
