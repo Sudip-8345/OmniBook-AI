@@ -12,3 +12,13 @@ TICKETS_PATH = os.path.join(PROJECT_ROOT, "data", "tickets.json")
 SMTP_EMAIL = os.getenv("SMTP_EMAIL", "")
 SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+
+# config.py
+
+DB_CONFIG = {
+    "dbname": "omnidb",
+    "user": "postgres",
+    "password": "020304",
+    "host": "localhost",       
+    "port": "5433"       
+}

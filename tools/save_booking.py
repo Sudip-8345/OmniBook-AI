@@ -1,6 +1,6 @@
 import json
 from langchain_core.tools import tool
-from database.db import save_user, save_booking, save_payment
+from database.pg_db import save_user, save_booking, save_payment
 
 
 @tool

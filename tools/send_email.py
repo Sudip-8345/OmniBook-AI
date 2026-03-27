@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from langchain_core.tools import tool
 from config import SMTP_EMAIL, SMTP_PASSWORD
-from database.db import get_receipt_data
+from database.pg_db import get_receipt_data
 
 
 def _build_html_email(booking_id, passenger_name):

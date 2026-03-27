@@ -11,7 +11,7 @@ from langchain_core.messages import HumanMessage
 
 from config import GROQ_API_KEY, MODEL_NAME
 from agent.graph import build_graph
-from database.db import init_db, get_receipt_data
+from database.pg_db import init_db, get_receipt_data
 
 # ── Initialize ───────────────────────────────────────────────
 app = FastAPI(title="OmniBook AI", description="Autonomous Ticket Booking Agent")

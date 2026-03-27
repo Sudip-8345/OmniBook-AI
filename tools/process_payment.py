@@ -20,3 +20,4 @@ def process_payment_mock(amount: float, passenger_name: str, passenger_email: st
         "passenger_name": passenger_name,
         "message": f"Payment of \u20b9{amount:.2f} processed successfully for {passenger_name}",
     })
+

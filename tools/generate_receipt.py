@@ -1,5 +1,5 @@
 from langchain_core.tools import tool
-from database.db import get_receipt_data
+from database.pg_db import get_receipt_data
 
 
 @tool
